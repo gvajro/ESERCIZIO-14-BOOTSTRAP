@@ -45,7 +45,7 @@ background-color: #7c9180;
 }
 
 .size{
-height: 65vh;
+height: 55vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -77,8 +77,9 @@ position: relative;
     color: white;
   }
 
-.hover-text{
-position: relative;
+.text-box h3 a:hover{
+color: rgba(0, 0, 0, 0.6);
+transition: all 0.4s ease-in-out;
 }
 
 .text{
@@ -119,18 +120,18 @@ position: relative;
 
 
 .new-graphics{
-margin: 30px auto;
+margin: 40px auto;
 }
 .graphics{
 border-top: 1px solid #d9d9d9;
-margin: 70px auto;
+margin: 50px auto;
 }
 .box-tree{
 background-color: #cac4b9;
 }
 
 .size-box{
-height:50vh;
+height:55vh;
 }
   /********typo*************/
   h1{
@@ -189,6 +190,11 @@ height:50vh;
   color: white;
   }
 
+.box-tree img{
+max-width: 380px;
+}
+
+
 .banner img{
 width: 100%;
 }
@@ -199,7 +205,7 @@ max-width: 600px;
 display: inline-block;
 }
 .sabi{
-max-width: 300px;
+max-width: 380px;
 }
 .no-pad{
 padding: 0;
@@ -282,11 +288,10 @@ color: white;
 max-width: 300px;
 }
 h1{
-font-size: 22px;
+font-size: 30px;
 }
 p{
-font-size: 15px;
-text-align: left;
+font-size: 13px;
 }
 .text h1{
 font-size: 50px;
@@ -327,4 +332,10 @@ margin: 10px 0;
 margin: 20px 0;
 font-size: 25px;
 }
+
+}
+@media screen and (min-width: 770px) and (max-width: 1300px){
+  .size-box{
+  height: 40vh;
+  }
 }
