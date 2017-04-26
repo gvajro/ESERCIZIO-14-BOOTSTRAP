@@ -339,3 +339,6 @@ font-size: 25px;
   height: 40vh;
   }
 }
+.swiper-container {
+       width: 100%;
+       margin: 20px auto;

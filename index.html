@@ -99,40 +99,40 @@
               PHOTOGRAPHY!</h1>
             <p>New 2017 items now available in our photographic art category</p>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-4 no-pad">
-            <div class="box-tree box"  style="background-color:#7c9180">
-              <div class="size size-box">
-                <a class="info" href="#">
-                  <h2>Green Home 01</h2>
-                  <p>By Kantinkoski, Vento &#38; Forsman €79.00</p>
-                </a>
-                <img class="img-responsive"src="image/greenhome.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 no-pad">
-            <div class="box-tree box" style="background-color: #7a242e">
-              <div class="size size-box">
-                <a class="info" href="#">
-                  <h2>Green Home 02</h2>
-                  <p>By Kantinkoski, Vento &#38; Forsman €79.00</p>
-                </a>
-                <img class="img-responsive"src="image/greenhome-2.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 no-pad">
-            <div class="box-tree box" style="background-color: #eac9bd">
-              <div class="size size-box">
-                <a class="info" href="#">
-                  <h2>Los Angeles Is Pink</h2>
-                  <p>By Mikal Strøm €40.00</p>
-                </a>
-                <img class="img-responsive"src="image/los-angeles.png" alt="">
-              </div>
-            </div>
-          </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="size size-box">
+                        <a class="info" href="#">
+                          <h2>Green Home 01</h2>
+                          <p>By Kantinkoski, Vento &#38; Forsman €79.00</p>
+                        </a>
+                        <img class="img-responsive"src="image/greenhome.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="size size-box">
+                        <a class="info" href="#">
+                          <h2>Green Home 02</h2>
+                          <p>By Kantinkoski, Vento &#38; Forsman €79.00</p>
+                        </a>
+                        <img class="img-responsive"src="image/greenhome-2.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="size size-box">
+                        <a class="info" href="#">
+                          <h2>Los Angeles Is Pink</h2>
+                          <p>By Mikal Strøm €40.00</p>
+                        </a>
+                        <img class="img-responsive"src="image/los-angeles.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+
           <div class="new-graphics">
             <h1>Save More<br>
               Than 60%!!</h1>
@@ -425,8 +425,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        slidesPerView: 3,
+        loop: true
+    });
+    </script>
 
 
-    
   </body>
 </html>
